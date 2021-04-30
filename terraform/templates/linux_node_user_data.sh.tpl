@@ -39,7 +39,7 @@ install_apps() {
     echo " ********************************"
     echo " **** Install SplunkBaseApps ****"
     echo " ********************************"
-    git clone https://github.com/anthonygrees/splunk_eventgen_7x /tmp/splunk-eventgen-guide
+    git clone https://github.com/anthonygrees/splunk_eventgen_7x_cca /tmp/splunk-eventgen-guide
     sudo /opt/splunk/bin/splunk install app /tmp/splunk-eventgen-guide/apps/splunk-app-for-amazon-connect_004.tgz -auth admin:${splunk_password}
     sudo /opt/splunk/bin/splunk install app /tmp/splunk-eventgen-guide/apps/event-timeline-viz_150.tgz -auth admin:${splunk_password}
     sudo /opt/splunk/bin/splunk install app /tmp/splunk-eventgen-guide/apps/splunk-timeline-custom-visualization_150.tgz -auth admin:${splunk_password}
