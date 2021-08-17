@@ -21,6 +21,7 @@ First you need the code !
 git clone https://github.com/anthonygrees/splunk_demo_cca
 
 cd splunk_demo_cca
+cd terraform
 ```
   
 Next, create yourself a `terraform.tfvars` file with the following:  
